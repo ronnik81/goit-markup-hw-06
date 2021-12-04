@@ -560,7 +560,7 @@ header {
 
 /* ----------------- FOOTER SUBSCRIPTION ----------------- */
 
-.footer-form-container {
+.footer-subscribe-section {
   margin-top: 12px;
   margin-left: auto;
 }
@@ -572,10 +572,6 @@ header {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-}
-
-.subscribe-form {
-  display: flex;
 }
 
 .subscribe-input {
@@ -609,13 +605,14 @@ header {
   margin-left: 12px;
 }
 
-.subscribe-button-text {
+.subscribe-button-area {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.subscribe-icon {
+.subscribe-button-icon {
+  fill: #ffffff;
   margin-left: 10px;
   display: inline-block;
   justify-content: center;
@@ -780,4 +777,56 @@ header {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+}
+
+/* -------------------- MODAL FORM ---------------------- */
+
+.modal-form-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: var(--brand-color-main);
+  text-align: center;
+  padding-top: 40px;
+}
+
+.modal-form {
+  padding: 0 40px;
+  margin-top: 12px;
+}
+
+/* .modal-person-wrap {
+  position: relative;
+} */
+
+.modal-person-input-wrap {
+  margin-top: 4px;
+  position: relative;
+}
+
+.modal-form-person-input {
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+}
+
+.modal-form-label {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--brand-color-text);
+}
+
+.modal-person-icon {
+  fill: var(--brand-color-main);
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
 }
