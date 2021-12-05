@@ -490,17 +490,40 @@
         <!-- MODAL FORM -->
         <p class="modal-form-title">Оставьте свои данные, мы вам перезвоним</p>
         <form class="modal-form">
-          <div class="modal-person-wrap">
-            <label class="modal-form-label">
-              Имя
-              <span class="modal-person-input-wrap">
-                <input type="text" class="modal-form-person-input" />
-                <svg class="modal-person-icon" width="18px" height="18px">
-                  <use href="./images/icons.svg#icon-modal-person"></use>
-                </svg>
-              </span>
-            </label>
-          </div>
+          <label class="modal-label">
+            Имя
+            <span class="modal-label-wrap">
+              <input type="text" class="modal-form-input" />
+              <svg class="modal-lable-icon" width="18px" height="18px">
+                <use href="./images/icons.svg#icon-modal-person"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-label">
+            Телефон
+            <span class="modal-label-wrap">
+              <input type="tel" class="modal-form-input" />
+              <svg class="modal-lable-icon" width="18px" height="18px">
+                <use href="./images/icons.svg#icon-modal-phone"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-label">
+            Почта
+            <span class="modal-label-wrap">
+              <input type="email" class="modal-form-input" />
+              <svg class="modal-lable-icon" width="18px" height="18px">
+                <use href="./images/icons.svg#icon-modal-email"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-label">
+            Комментарий
+            <textarea
+              placeholder="Введите текст"
+              class="modal-form-comment"
+            ></textarea>
+          </label>
         </form>
       </div>
     </div>
