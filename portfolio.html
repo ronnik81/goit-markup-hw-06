@@ -251,7 +251,7 @@
     <!-- FOOTER CONTACTS -->
     <footer class="footer">
       <div class="container footer-container">
-        <section class="footer-contacts">
+        <div class="footer-contacts">
           <h3 class="visually-hidden">Контакты</h3>
           <a class="logo footer-logo" href="./"
             >Web<span class="logo-white">Studio</span></a
@@ -273,10 +273,10 @@
               </a>
             </li>
           </ul>
-        </section>
+        </div>
 
         <!-- FOOTER SOCIAL -->
-        <section class="footer-social">
+        <div class="footer-social">
           <h3 class="footer-social-title">Присоединяйтесь</h3>
           <ul class="footer-social-list">
             <li class="footer-social-item">
@@ -308,7 +308,27 @@
               </a>
             </li>
           </ul>
-        </section>
+        </div>
+
+        <!-- FOOTER SUBSCRIPTION -->
+        <div class="footer-subscribe-section">
+          <p class="subcribe-title">Подпишитесь на рассылку</p>
+          <form class="subcribe-form">
+            <input
+              class="subscribe-input"
+              type="email"
+              name="subscribe"
+              placeholder="E-mail"
+              required
+            />
+            <button type="submit" class="submit-subscribe-btn">
+              Подписаться
+              <svg class="icon-send" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
   </body>
