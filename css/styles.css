@@ -773,6 +773,10 @@ header {
   align-items: center;
 }
 
+.modal-close:hover .modal-close-icon {
+  fill: var(--brand-color-focus);
+}
+
 .is-hidden {
   visibility: hidden;
   opacity: 0;
