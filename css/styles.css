@@ -811,6 +811,10 @@ header {
   transition: border-color var(--timing-function);
 }
 
+.modal-form-input:hover {
+  cursor: pointer;
+}
+
 .modal-form-input:focus {
   border-color: var(--brand-color-focus);
 }
