@@ -565,6 +565,12 @@ header {
   margin-left: auto;
 }
 
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .subscribe-title {
   font-size: 14px;
   font-weight: 700;
@@ -586,7 +592,7 @@ header {
   padding: 15px 0 15px 16px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
 
@@ -603,20 +609,13 @@ header {
   border-radius: 4px;
   border-style: none;
   margin-left: 12px;
-}
-
-.subscribe-button-area {
   display: flex;
-  justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .subscribe-button-icon {
   fill: #ffffff;
-  margin-left: 10px;
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
 }
 
 /* ----------------- PORTFOLIO SECTION ----------------- */
@@ -804,9 +803,19 @@ header {
 .modal-form-input {
   width: 448px;
   height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid;
+  border-color: rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
+  transition: border-color var(--timing-function);
+}
+
+.modal-form-input:focus {
+  border-color: var(--brand-color-focus);
+}
+
+.modal-form-input:focus + .modal-lable-icon {
+  fill: var(--brand-color-focus);
 }
 
 .modal-form-comment {
@@ -815,11 +824,6 @@ header {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-top: 4px;
-  /* font-size: 12px;
-  font-weight: 400;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5); */
   padding: 12px 16px;
 }
 
@@ -843,6 +847,7 @@ header {
   left: 15px;
   top: 50%;
   transform: translateY(-50%);
+  transition: fill var(--timing-function);
 }
 
 /* -------------------- MODAL FORM CHECKBOX ---------------------- */
@@ -863,7 +868,6 @@ header {
 
 .modal-checkbox-wrap {
   position: relative;
-  justify-content: center;
 }
 
 .modal-checkbox {
