@@ -616,6 +616,7 @@ header {
 
 .subscribe-button-icon {
   fill: #ffffff;
+  display: flex;
 }
 
 /* ----------------- PORTFOLIO SECTION ----------------- */
