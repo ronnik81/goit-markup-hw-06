@@ -834,6 +834,7 @@ header {
   border-radius: 4px;
   margin-top: 4px;
   padding: 12px 16px;
+  resize: none;
 }
 
 .modal-label {
